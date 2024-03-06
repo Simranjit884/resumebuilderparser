@@ -1,5 +1,3 @@
-import TopNavBar from "./components/TopNavBar";
-
 export default function Home() {
-  return <TopNavBar />;
+  return <main></main>;
 }
