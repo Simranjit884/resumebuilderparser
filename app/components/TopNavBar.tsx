@@ -17,10 +17,10 @@ function TopNavBar() {
         isHomePage && "bg-dot"
       )}
     >
-      <div className=" flex w-full items-center justify-between">
+      <div className=" flex h-10 w-full items-center justify-between">
         <Link href="/">
-          <div>
-            <Image src={"assets/heart.svg"} width={16} height={16} alt="logo" className="" />
+          <div className="flex items-center gap-1 justify-between">
+            <Image src={"assets/heart.svg"} width={16} height={16} alt="logo" className="h-8 w-8" priority />
             <h1 className="text-xl text-primary">Resume Builder and Parser</h1>
           </div>
         </Link>
