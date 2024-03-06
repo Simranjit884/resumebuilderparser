@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { cx } from "../lib/cx";
 import Link from "next/link";
+import Image from "next/image";
 
 function TopNavBar() {
   const pathName = usePathname();
@@ -18,7 +19,10 @@ function TopNavBar() {
     >
       <div className=" flex w-full items-center justify-between">
         <Link href="/">
-          <h2 className="text-xl text-primary">Resume Builder and Parser</h2>
+          <div>
+            <Image src={"assets/heart.svg"} width={16} height={16} alt="logo" className="" />
+            <h1 className="text-xl text-primary">Resume Builder and Parser</h1>
+          </div>
         </Link>
         <nav aria-label="Site Nav Bar" className="flex items-center gap-2 text-sm font-medium">
           {[
