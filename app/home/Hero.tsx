@@ -4,8 +4,8 @@ import { FlexboxSpacer } from "../components/FlexboxSpacer";
 export const Hero = () => {
   return (
     <section className="lg:flex lg:h-[825px] lg:justify-center">
-      <FlexboxSpacer maxWidth={75} minWidth={0} className="hidden lg:block" />
-      <div>
+      <FlexboxSpacer maxWidth={75} minWidth={50} className="hidden lg:block" />
+      <div className="mx-auto max-w-xl pt-8 text-center lg:mx-0 lg:grow lg:pt-32 lg:text-left">
         <h1 className="text-primary pb-2 text-4xl font-bold lg:text-5xl">
           Create a professional
           <br />
@@ -16,7 +16,14 @@ export const Hero = () => {
           Create Resume
         </Link>
         <p className="ml-6 mt-3 text-sm text-gray-600">No sign up required</p>
+        <p className="mt-3 text-sm text-gray-600 lg:mt-36">
+          Already have a resume? Test its ATS readability with the{" "}
+          <Link href="/resume-parser" className="underline underline-offset-2">
+            resume parser
+          </Link>
+        </p>
       </div>
+      <FlexboxSpacer maxWidth={100} minWidth={50} className="hidden lg:block" />
     </section>
   );
 };
