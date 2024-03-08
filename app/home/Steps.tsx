@@ -3,3 +3,7 @@ const STEPS = [
   { title: "Preview design", text: "and make edits" },
   { title: "Download new resume", text: "and apply with confidence" },
 ];
+
+export const Steps = () => {
+  return <section></section>;
+};
